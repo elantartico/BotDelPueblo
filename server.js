@@ -21,7 +21,7 @@ app.use(express.static('public'));
 app.all("/" + process.env.BOT_ENDPOINT, function (request, response) {
 /* The example below tweets out "Hello world!". */
   var resp = response;
-  T.post('statuses/update', { status: 'hello world 👋' }, function(err, data, response) {
+  T.post('statuses/update', { status: 'suh' }, function(err, data, response) {
     if (err){
       resp.sendStatus(500);
       console.log('Error!');
