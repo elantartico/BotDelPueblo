@@ -20,8 +20,20 @@ app.use(express.static('public'));
 
 app.all("/" + process.env.BOT_ENDPOINT, function (request, response) {
 /* The example below tweets out "Hello world!". */
+  var message_options = [
+        "They didn\'t hand out tickets to the Sermon on the Mount. People just turned up, they knew it was a good gig.",
+        "Jazz is the last refuge of the untalented. Jazz musicians enjoy themselves more than anyone listening to them does.",
+        "Every band needs it's own special chemistry. And Bez was a very good chemist.",
+        "They\'re applauding the DJ. Not the music, not the musician, not the creator, but the medium.",
+        "I\'m being postmodern, before it was fashionable.",
+        "I am not a lump of hash. I\'m in charge of Factory Records... I think.",
+        "Yoyo!",
+        "Yo!",
+      ]
+   var random_index = Math.floor(Math.random() * message_options.length)
+   var chosen_message = message_options[random_index]
   var resp = response;
-  T.post('statuses/update', { status: 'suh' }, function(err, data, response) {
+  T.post('statuses/update', { status: chosen_message }, function(err, data, response) {
     if (err){
       resp.sendStatus(500);
       console.log('Error!');
