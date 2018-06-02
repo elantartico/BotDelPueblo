@@ -43,6 +43,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function (request, response) {
         "You see, I fucking know what you are, but you don\'t know what you are.",
         "George Epstein. It's Brian Martin.\nIt\'s George Martin, you knob.",
         "Broccoli the vegetable?\nIt\'s a little known fact that it was invented by Cubby Broccoli, the producer of the James Bond films.",
+        "I\'m not eating fucking bunny-rabbit food.\nI\'m going for a Kentucky.",
       ]
    var random_index = Math.floor(Math.random() * message_options.length)
    var chosen_message = message_options[random_index]
