@@ -21,29 +21,8 @@ app.use(express.static('public'));
 app.all("/" + process.env.BOT_ENDPOINT, function (request, response) {
 /* The example below tweets out "Hello world!". */
   var message_options = [
-        "They didn\'t hand out tickets to the Sermon on the Mount. People just turned up, they knew it was a good gig.",
-        "Jazz is the last refuge of the untalented. Jazz musicians enjoy themselves more than anyone listening to them does.",
-        "Every band needs it's own special chemistry. And Bez was a very good chemist.",
-        "They\'re applauding the DJ. Not the music, not the musician, not the creator, but the medium.",
-        "I\'m being postmodern, before it was fashionable.",
-        "I am not a lump of hash. I\'m in charge of Factory Records... I think.",
-        "Now imagine the machine breaks. For a while, it\'s even better, because you\'re really flying; but then, you\'re fucked, because nobody beats gravity.",
-        "This scene didn\'t actually make it to the final cut. I\'m sure it\'ll be on the DVD.",
-        "People have been playing like that for the past 20,000 years and quite frankly, it\'s boring me arse off, y\'know?",
-        "I mean, we obviously have nothing in common. I\'m a genius, you\'re fucking wankers",
-        "Can I offer anybody like the best drug experience they ever had?",
-        "Tony, you did a good job. Basically you are right: Shaun is the greatest poet since Yeats.",
-        "The artists own all their work. The label owns nothing. Our bands have the freedom ... to fuck off.",
-        "Is he gonna hit me? You\'re quite close to me there.",
-        "You\'re recording silence?",
-        "Yes, I\'ve dropped a bollock. I\'ve dropped a big massive hairy bollock.",
-        "What\'s wrong with London Records?\nThe name, for a start.",
-        "Tony, you\'re fucking mad.\nWell, that is a point of view.",
-        "Well, that is amazing, because everybody else thinks he\'s a fucking idiot.",
-        "You see, I fucking know what you are, but you don\'t know what you are.",
-        "George Epstein. It's Brian Martin.\nIt\'s George Martin, you knob.",
-        "Broccoli the vegetable?\nIt\'s a little known fact that it was invented by Cubby Broccoli, the producer of the James Bond films.",
-        "I\'m not eating fucking bunny-rabbit food.\nI\'m going for a Kentucky.",
+        "Dividimos al país en dos categorías: una, la de los hombres que trabajan, y la otra, la que vive de los hombres que trabajan. Ante esta situación, nos hemos colocado abiertamente del lado de los que trabajan.\n-Juan Domingo Perón",
+        "El Justicialismo ha dejado de ser la causa de un hombre para ser la causa del pueblo, y por ella sí valdría la pena darlo todo, incluso la vida.\n-Juan Domingo Perón",
       ]
    var random_index = Math.floor(Math.random() * message_options.length)
    var chosen_message = message_options[random_index]
