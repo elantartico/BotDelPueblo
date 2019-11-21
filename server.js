@@ -23,6 +23,8 @@ app.all("/" + process.env.BOT_ENDPOINT, function (request, response) {
   var message_options = [
         "Dividimos al país en dos categorías: una, la de los hombres que trabajan, y la otra, la que vive de los hombres que trabajan. Ante esta situación, nos hemos colocado abiertamente del lado de los que trabajan.\n-Juan Domingo Perón",
         "El Justicialismo ha dejado de ser la causa de un hombre para ser la causa del pueblo, y por ella sí valdría la pena darlo todo, incluso la vida.\n-Juan Domingo Perón",
+        "Los intelectuales argentinos suben al caballo por la izquierda y bajan por la derecha.\n-Arturo Jauretche",
+        "Las disputas de la izquierda argentina son como los perros de los mataderos: se pelean por las achuras, mientras el abastecedor se lleva la vaca.\n-Arturo Jauretche"
       ]
    var random_index = Math.floor(Math.random() * message_options.length)
    var chosen_message = message_options[random_index]
