@@ -58,6 +58,10 @@ app.all("/" + process.env.BOT_ENDPOINT, function (request, response) {
 "Creemos firmemente en los proyectos políticos; creemos que es posible superar la individualidades que muchas veces con una frase pretendidamente escandalizadora pretenden ocupar, claro, lugares que demandan mucho más lugar si son ideas\n-Cristina Fernandez",
 "Sepan que voy a seguir representando los intereses de todos los argentinos. Lo pienso ejercer con todos los derechos que me da la Constitución y el voto popular\n-Cristina Fernandez",
 "Estamos en política para que la gente viva mejor, para que tenga educación, vivienda, salud, más justicia, más seguridad, todos los argentinos.\n-Cristina Fernandez",
+"No es que nosotros seamos tan buenos, sino que los demás son peores\n-Juan Domingo Perón",
+"La verdadera democracia es aquella donde el gobierno hace lo que el pueblo quiere y defiende un solo interés: el del pueblo\n-Juan Domingo Perón",
+"El que quiera conducir con éxito tiene que exponerse; el que quiere exitos mediocres, que no se exponga nunca; y si no quiere cometer ningún error, lo mejor es que nunca haga nada\n-Juan Domingo Perón",
+"Yo he visto malos que se han vuelto buenos, pero no he visto jamás un bruto volverse inteligente\n-Juan Domingo Perón",    
       ]
    var random_index = Math.floor(Math.random() * message_options.length)
    var chosen_message = message_options[random_index]
