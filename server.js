@@ -62,6 +62,12 @@ app.all("/" + process.env.BOT_ENDPOINT, function (request, response) {
 "La verdadera democracia es aquella donde el gobierno hace lo que el pueblo quiere y defiende un solo interés: el del pueblo\n-Juan Domingo Perón",
 "El que quiera conducir con éxito tiene que exponerse; el que quiere exitos mediocres, que no se exponga nunca; y si no quiere cometer ningún error, lo mejor es que nunca haga nada\n-Juan Domingo Perón",
 "Yo he visto malos que se han vuelto buenos, pero no he visto jamás un bruto volverse inteligente\n-Juan Domingo Perón",    
+"La clase media tiene que darse cuenta que nunca va a encontrar la solidaridad de la oligarquía argentina\n-Nestor Kirchner",
+"Querido embajador, ustedes sí que tienen muchos más problemas que nosotros con el narcotráfico y con los blanqueos; construyeron ciudades enteras con ello (al embajador de EEUU)\n-Nestor Kirchner",
+"Todos los argentinos tienen que cumplir la ley, menos Magnetto y Clarín, los demás tenemos que cumplir la ley como corresponde\n-Nestor Kirchner",
+"Formo parte de una generación diezmada. Castigada con dolorosas ausencias. Me sumé a las luchas políticas creyendo en valores y convicciones a los que no pienso dejar en la puerta de entrada de la Casa Rosada\n-Nestor Kirchner",
+"Tengan en claro que cuando nos atacan, nos atacan no por las cosas que hicimos mal o las que no hicimos todavía, nos atacan por las cosas que hicimos bien, no nos perdonan haber devuelto el principio de justicia en la Argentina y haber terminado con la impunidad\n-Nestor Kirchner",
+"No se enojen si hay chicos jóvenes argentinos que protestan, los que sufrimos, los que vimos lo que pasó en esta Patria, abrazamos fuertemente la democracia, a los chicos no los maneja nadie, ese es el cuento de siempre…\n-Nestor Kirchner",
       ]
    var random_index = Math.floor(Math.random() * message_options.length)
    var chosen_message = message_options[random_index]
