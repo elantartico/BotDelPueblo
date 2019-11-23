@@ -68,6 +68,9 @@ app.all("/" + process.env.BOT_ENDPOINT, function (request, response) {
 "Formo parte de una generación diezmada. Castigada con dolorosas ausencias. Me sumé a las luchas políticas creyendo en valores y convicciones a los que no pienso dejar en la puerta de entrada de la Casa Rosada\n-Nestor Kirchner",
 "Tengan en claro que cuando nos atacan, nos atacan no por las cosas que hicimos mal o las que no hicimos todavía, nos atacan por las cosas que hicimos bien, no nos perdonan haber devuelto el principio de justicia en la Argentina y haber terminado con la impunidad\n-Nestor Kirchner",
 "No se enojen si hay chicos jóvenes argentinos que protestan, los que sufrimos, los que vimos lo que pasó en esta Patria, abrazamos fuertemente la democracia, a los chicos no los maneja nadie, ese es el cuento de siempre…\n-Nestor Kirchner",
+"Nos quieren presentar la realidad o la historia como hechos inconexos, como si ninguno tuviera que ver con el otro, como si las cosas sucedieran casi como una tormenta.\n-Cristina Fernandez",
+"La verdad es que sinceramente, si querían acariciarme el alma lo han hecho. Quiero agradecerles a todos los que me han acariciado el alma porque lo han logrado con creces\n-Cristina Fernandez",
+"Estamos en el salón Borges… son incorregibles, ya lo digo Borges son incorregibles (a la multitud que cantó Vamos a volver)\n-Cristina Fernandez",
       ]
    var random_index = Math.floor(Math.random() * message_options.length)
    var chosen_message = message_options[random_index]
