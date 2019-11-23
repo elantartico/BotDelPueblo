@@ -33,7 +33,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function (request, response) {
 "Yo no soy un vivo: soy apenas un gil avivado\n-Arturo Jauretche",
 "El nacionalismo de ustedes se parece al amor del hijo junto a la tumba del padre; el nuestro, se parece al amor del padre junto a la cuna del hijo. [...] Para ustedes la Nación se realizó y fue derogada; para nosotros, todavía sigue naciendo\n-Arturo Jauretche",
 "Todos los sectores sociales deben estar unidos verticalmente por el destino común de la Nación. [...] Se hace imposible pensar la política social sin una política nacional\n-Arturo Jauretche",
-"Arturo Jauretche paseaba con un amigo mirando una marcha opositora a Perón. \n―Son muchos ―dijo el amigo. \n―Pero están condenados al fracaso ―respondió Jauretche. \n―\¿Por qué? \n―Fijate cuántos jóvenes hay.\n-",
+"Arturo Jauretche paseaba con un amigo mirando una marcha opositora a Perón. \n―Son muchos ―dijo el amigo. \n―Pero están condenados al fracaso ―respondió Jauretche. \n―\¿Por qué? \n―Fijate cuántos jóvenes hay.\n",
 "Es como dice el Principito, lo esencial es invisible a los ojos. Con esta gente todo es invisible, hasta la comida.\n-Cristina Fernandez",
 "De nada valdría un movimiento femenino en un mundo sin justicia social.\n-Eva Perón",
 "Donde existe una necesidad nace un derecho.\n-Eva Perón",
