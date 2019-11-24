@@ -118,7 +118,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
         console.log(err);
       } else {
         resp.sendStatus(200);
-        var nextIndex = lastIndex != totalLines ? lastIndex + 1 : 0;
+        var nextIndex = parseInt(lastIndex) != parseInt(totalLines) ? parseInt(lastIndex) + 1 : 0;
         fs.writeFile(__dirname + "/last_index.txt", nextIndex, function(err) {
           /* TODO: Error handling? */
         });
