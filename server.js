@@ -104,6 +104,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function (request, response) {
     
     
       //var random_index = Math.floor(Math.random() * message_options.length);
+    var totalLines = message_options.length - 1;
      var chosen_message = message_options[lastIndex];
     var resp = response;
     T.post('statuses/update', { status: chosen_message }, function(err, data, response) {
