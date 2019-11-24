@@ -1,5 +1,7 @@
 /* Setting things up. */
-var path = require('path'),
+var fs = require('fs'),
+    util = require('util'),
+    path = require('path'),
     express = require('express'),
     app = express(),   
     Twit = require('twit'),
@@ -93,21 +95,32 @@ app.all("/" + process.env.BOT_ENDPOINT, function (request, response) {
 "De los políticos solo podíamos esperar el engaño, la única revolución definitiva es la que hace el pueblo y dirigen los trabajadores\n-Rodolfo Walsh",
 "Recuerdo aquél 25 de mayo de 2003 cuando nos dejaron la Argentina prendida fuego y tuvimos que sacar el pecho para reconstruir la patria.\n-Nestor Kirchner",
       ];
-  fs.readFile(__dirname + '/last_tweet_id.txt', 'utf8', function (err, last_tweet_id) {
+  fs.readFile(__dirname + '/last_index.txt', 'utf8', function (err, lastIndex) {
+    console.log('last_index:', lastIndex);
     
-  }
-   var random_index = Math.floor(Math.random() * message_options.length);
-   var chosen_message = message_options[random_index];
-  var resp = response;
-  T.post('statuses/update', { status: chosen_message }, function(err, data, response) {
-    if (err){
-      resp.sendStatus(500);
-      console.log('Error!');
-      console.log(err);
+    if(lastIndex == null || lastIndex == ''){
+      lastIndex = 0;
     }
-    else{
-      resp.sendStatus(200);
-    }
+    
+    
+      //var random_index = Math.floor(Math.random() * message_options.length);
+     var chosen_message = message_options[lastIndex];
+    var resp = response;
+    T.post('statuses/update', { status: chosen_message }, function(err, data, response) {
+      if (err){
+        resp.sendStatus(500);
+        console.log('Error!');
+        console.log(err);
+      }
+      else{
+        resp.sendStatus(200);
+        var nextIndex = lastIndex + 1;
+        fs.writeFile(__dirname + '/last_index.txt', nextIndex, function (err) {
+          /* TODO: Error handling? */
+        });
+      }
+    });
+    
   });
 });
 
