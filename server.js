@@ -71,7 +71,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
     "De nada valdría un movimiento femenino en un mundo sin justicia social.\n-Eva Perón",
     "Ladran Sancho, señal que cabalgamos\n-Eva Perón",
     "La clase media tiene que darse cuenta que nunca va a encontrar la solidaridad de la oligarquía argentina\n-Nestor Kirchner",
-    "Estamos en el salón Borges… son incorregibles, ya lo digo Borges son incorregibles (a la multitud que cantó Vamos a volver)\n-Cristina Fernandez",
+    "Estamos en el salón Borges… son incorregibles, ya lo dijo Borges son incorregibles (a la multitud que cantó Vamos a volver)\n-Cristina Fernandez",
     "Yo no me dejé arrancar el alma que traje de la calle, por eso no me deslumbró jamás la grandeza del poder y pude ver sus miserias. Por eso nunca me olvidé de las miserias de mi pueblo y pude ver sus grandezas.\n-Eva Perón",
     "Es hora de que la dirigencia política deje de lado los fueros y rinda cuentas permanentemente cada vez que es citada ante una intervención de la Justicia\n-Nestor Kirchner",
     "Los intelectuales argentinos suben al caballo por la izquierda y bajan por la derecha.\n-Arturo Jauretche",
