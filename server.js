@@ -78,6 +78,8 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
     "La unidad exige un claro propósito y una estrategia común variada en su aplicación pero no aguada por malabarismos palabreros. Es, a nuestro juicio, lo mínimo que podemos ofrecer a los pueblos de América Latina\n-John William Cooke",
     "Al amigo todo, al enemigo ni justicia\n-Juan Domingo Perón",
     "Formo parte de una generación diezmada. Castigada con dolorosas ausencias. Me sumé a las luchas políticas creyendo en valores y convicciones a los que no pienso dejar en la puerta de entrada de la Casa Rosada\n-Nestor Kirchner",
+    "A mí me va a absolver la historia. Y a ustedes seguramente los va a condenar la historia (al TOF 2).\n-Cristina Fernández",
+    "¿Preguntas? Preguntas tienen que contestar ustedes, no yo (al TOF 2).\n-Cristina Fernández",
     "El nacionalismo de ustedes se parece al amor del hijo junto a la tumba del padre; el nuestro, se parece al amor del padre junto a la cuna del hijo. [...] Para ustedes la Nación se realizó y fue derogada; para nosotros, todavía sigue naciendo\n-Arturo Jauretche",
     "Ignoran que la multitud no odia, odian las minorías, porque conquistar derechos provoca alegría, mientras perder privilegios provoca rencor\n-Arturo Jauretche",
     "No se enojen si hay chicos jóvenes argentinos que protestan, los que sufrimos, los que vimos lo que pasó en esta Patria, abrazamos fuertemente la democracia, a los chicos no los maneja nadie, ese es el cuento de siempre…\n-Nestor Kirchner",
@@ -94,7 +96,8 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
     "Tengan en claro que cuando nos atacan, nos atacan no por las cosas que hicimos mal o las que no hicimos todavía, nos atacan por las cosas que hicimos bien, no nos perdonan haber devuelto el principio de justicia en la Argentina y haber terminado con la impunidad\n-Nestor Kirchner",
     "Sepan que voy a seguir representando los intereses de todos los argentinos. Lo pienso ejercer con todos los derechos que me da la Constitución y el voto popular\n-Cristina Fernandez",
     "De los políticos solo podíamos esperar el engaño, la única revolución definitiva es la que hace el pueblo y dirigen los trabajadores\n-Rodolfo Walsh",
-    "Recuerdo aquél 25 de mayo de 2003 cuando nos dejaron la Argentina prendida fuego y tuvimos que sacar el pecho para reconstruir la patria.\n-Nestor Kirchner"
+    "Recuerdo aquél 25 de mayo de 2003 cuando nos dejaron la Argentina prendida fuego y tuvimos que sacar el pecho para reconstruir la patria.\n-Nestor Kirchner",
+    
   ];
   fs.readFile(__dirname + "/last_index.txt", "utf8", function(err, lastIndex) {
     console.log("last_index:", lastIndex);
