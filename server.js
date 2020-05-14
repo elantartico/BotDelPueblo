@@ -111,7 +111,8 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
     "Sangra tanto el corazón del que pide, que hay que correr y dar, sin esperar\n-Eva Perón",
     "Tengan en claro que cuando nos atacan, nos atacan no por las cosas que hicimos mal o las que no hicimos todavía, nos atacan por las cosas que hicimos bien, no nos perdonan haber devuelto el principio de justicia en la Argentina y haber terminado con la impunidad\n-Nestor Kirchner",
     "Un país que lo soñamos, que Cristina lo sueña junto con la clase media, los intelectuales, los industriales, los jovenes, todos los argentinos que quieren hacer grande este país.\n-Nestor Kirchner",
-    "A mí me va a absolver la historia. Y a ustedes seguramente los va a condenar la historia (al TOF 2)\n-Cristina Fernandez"
+    "A mí me va a absolver la historia. Y a ustedes seguramente los va a condenar la historia (al TOF 2)\n-Cristina Fernandez",
+    "El Peronismo es un movimiento universal. Perón pertenece al mundo por haber creado su Doctrina de Justicia y de Amor. Perón pertenece a toda la Humanidad.\n-Eva Perón"
   ];
   fs.readFile(__dirname + "/last_index.txt", "utf8", function(err, lastIndex) {
     console.log("last_index:", lastIndex);
