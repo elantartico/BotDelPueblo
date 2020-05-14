@@ -76,6 +76,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
     "Como mujer siento en el alma la cálida ternura del pueblo de donde vine y a quien me debo\n-Eva Perón",
     "No es que nosotros seamos tan buenos, sino que los demás son peores\n-Juan Domingo Perón",
     "La política es la historia del presente y la historia es la política de épocas pasadas\n-Arturo Jauretche",
+    "Aquella noche les dije que no era magia lo que habíamos vivido. Era un Argentina solidaria donde nos importaba lo que le pasaba al de al lado.\n-Cristina Fernandez",
     "Ladran Sancho, señal que cabalgamos\n-Eva Perón",
     "Yo no soy un vivo: soy apenas un gil avivado\n-Arturo Jauretche",
     "La traición de un líder es más difícil de superar que la oposición de un enemigo abierto.\n-Rodolfo Walsh",
@@ -112,7 +113,8 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
     "Tengan en claro que cuando nos atacan, nos atacan no por las cosas que hicimos mal o las que no hicimos todavía, nos atacan por las cosas que hicimos bien, no nos perdonan haber devuelto el principio de justicia en la Argentina y haber terminado con la impunidad\n-Nestor Kirchner",
     "Un país que lo soñamos, que Cristina lo sueña junto con la clase media, los intelectuales, los industriales, los jovenes, todos los argentinos que quieren hacer grande este país.\n-Nestor Kirchner",
     "A mí me va a absolver la historia. Y a ustedes seguramente los va a condenar la historia (al TOF 2)\n-Cristina Fernandez",
-    "El Peronismo es un movimiento universal. Perón pertenece al mundo por haber creado su Doctrina de Justicia y de Amor. Perón pertenece a toda la Humanidad.\n-Eva Perón"
+    "El Peronismo es un movimiento universal. Perón pertenece al mundo por haber creado su Doctrina de Justicia y de Amor. Perón pertenece a toda la Humanidad.\n-Eva Perón",
+    "Presidente quiero decirle que ha iniciado su gobierno con muy buenos augurios después del mensaje que le dio a su pueblo en la Asamblea Legislativa. Confié en ellos. Lo único que piden es que los defiendan y los representen.\n-Cristina Fernandez"
   ];
   fs.readFile(__dirname + "/last_index.txt", "utf8", function(err, lastIndex) {
     console.log("last_index:", lastIndex);
