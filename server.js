@@ -40,6 +40,8 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
     "Estos asuntos de economía y finanzas son tan simples que están al alcance de cualquier niño. Sólo requieren saber sumar y restar. Cuando usted no entiende una cosa, pregunte hasta que la entienda. Si no la entiende, es que están tratando de robarle.\n-Scalabrini Ortiz",
     "De nada valdría un movimiento femenino en un mundo sin justicia social.\n-Eva Perón",
     "Al amigo todo, al enemigo ni justicia\n-Juan Domingo Perón",
+    "Yo llevo en mis oídos la más maravillosa música que, para mí, es la palabra del pueblo argentino.\n-Juan Domingo Perón",
+    "El gobierno justicialista es aquel que sirve al pueblo, que no sirve otro interés que el del pueblo.\n-Juan Domingo Perón",
     "Sin esperanza de ser escuchado, con la certeza de ser perseguido, pero fiel al compromiso que asumí hace mucho tiempo de dar testimonio en momentos difíciles\n-Rodolfo Walsh",
     "Quiero que quede claro, como presidente de la Nación, no tengo miedo ni les tengo miedo, que queremos el Ejército de San Martín, Belgrano, Mosconi y Savio, y no de aquellos que asesinaron a sus propios hermanos, que fue el de Videla, Galtieri, Viola y Bignone\n-Nestor Kirchner",
     "Lo que hace falta es una definición donde Ud. Le diga a todo el movimiento, sintéticamente, que somos revolucionarios en el exacto significado: liberación nacional y revolución social.\n-John William Cooke",
@@ -49,6 +51,8 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
     "Dividimos al país en dos categorías: una, la de los hombres que trabajan, y la otra, la que vive de los hombres que trabajan. Ante esta situación, nos hemos colocado abiertamente del lado de los que trabajan.\n-Juan Domingo Perón",
     "Yo sé que ustedes recogerán mi nombre y lo llevarán como bandera a la victoria\n-Eva Perón",
     "Pongo junto al alma de mi pueblo, mi propia alma\n-Eva Perón",
+    "Un pueblo que vuelva a recuperar las posibilidades de saber que cada día va a poder estar mejor.\n-Nestor Kirchner",
+    "No nos sentimos por arriba de nadie, creemos que la Argentina necesita generosidad y necesita grandeza.\n-Nestor Kirchner",
     "El que quiera conducir con éxito tiene que exponerse; el que quiere exitos mediocres, que no se exponga nunca; y si no quiere cometer ningún error, lo mejor es que nunca haga nada\n-Juan Domingo Perón",
     "Ignoran que la multitud no odia, odian las minorías, porque conquistar derechos provoca alegría, mientras perder privilegios provoca rencor\n-Arturo Jauretche",
     "Creemos firmemente en los proyectos políticos; creemos que es posible superar la individualidades que muchas veces con una frase pretendidamente escandalizadora pretenden ocupar, claro, lugares que demandan mucho más lugar si son ideas\n-Cristina Fernandez",
@@ -70,6 +74,8 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
     "Mis colegas periodistas de los grandes diarios podrían tomarse el trabajo que yo me tomé, en vez de copiar lo que les dicta el teniente coronel fusilador\n-Rodolfo Walsh",
     "Le tengo más miedo al frío de los corazones de los compañeros que se olvidan de donde vinieron, que al de los oligarcas\n-Eva Perón",
     "Donde existe una necesidad nace un derecho.\n-Eva Perón",
+    "El individualismo es la escuela nefasta y negativa de ganar, carente de sentido social y de sentido político. Es muy difícil que un hombre pueda realizarse en una comunidad que no se realice.\n-Juan Domingo Perón",
+    "Congeniar lo individual con lo colectivo, ese el proceso revolucionario nuestro.\n-Juan Domingo Perón",
     "Mientras los ideólogos sueñan, gente más práctica tortura y mata. Y eso es concreto, eso es urgente, eso es de aquí y de ahora\n-Rodolfo Walsh",
     "Al perder todo tipo de prestigio social y autoridad moral, como consecuencia del desastre socioeconómico en el que dejaron sumido al país, buena parte de la derecha argentina pasará a militar -lisa y llanamente- en la ANTIPOLITICA.\n-Leandro Santoro",
     "En 1930 yo había alcanzado el más alto título que un escritor puede lograr con su pluma: el de redactor de “La Nación”, cargo que renuncié para descender voluntariamente a la plebeya arena en que nos debatimos los defensores de los intereses generales del pueblo\n-Scalabrini Ortiz",
@@ -100,6 +106,8 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
     "No se enojen si hay chicos jóvenes argentinos que protestan, los que sufrimos, los que vimos lo que pasó en esta Patria, abrazamos fuertemente la democracia, a los chicos no los maneja nadie, ese es el cuento de siempre…\n-Nestor Kirchner",
     "La verdad es que sinceramente, si querían acariciarme el alma lo han hecho. Quiero agradecerles a todos los que me han acariciado el alma porque lo han logrado con creces\n-Cristina Fernandez",
     "No pasarán a la historia aquellos que especulen, sino los que más se la jueguen.\n-Nestor Kirchner",
+    "A esto lo arreglamos entre todos los argentinos o no lo arregla nadie.\n-Juan Domingo Perón",
+    "Si ellos colonizar de nuevo el país, nosotros lo independizaremos otra vez.\n-Juan Domingo Perón",
     "Para dominar un país ya no hace falta someterlo militarmente, bastan oportunos empréstitos y concesiones\n-Scalabrini Ortiz",
     "La clase media tiene que darse cuenta que nunca va a encontrar la solidaridad de la oligarquía argentina\n-Nestor Kirchner",
     "El peronismo es más que un partido. No lo disuelven por decreto ni lo amansan por intimidación. No llamamos a ninguna aventura desesperada. Llamamos a la lucha, que comienza por esclarecer las conciencias, proclama las verdades y hablar por los que callan\n-John William Cooke",
@@ -114,7 +122,9 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
     "Un país que lo soñamos, que Cristina lo sueña junto con la clase media, los intelectuales, los industriales, los jovenes, todos los argentinos que quieren hacer grande este país.\n-Nestor Kirchner",
     "A mí me va a absolver la historia. Y a ustedes seguramente los va a condenar la historia (al TOF 2)\n-Cristina Fernandez",
     "El Peronismo es un movimiento universal. Perón pertenece al mundo por haber creado su Doctrina de Justicia y de Amor. Perón pertenece a toda la Humanidad.\n-Eva Perón",
-    "Presidente quiero decirle que ha iniciado su gobierno con muy buenos augurios después del mensaje que le dio a su pueblo en la Asamblea Legislativa. Confié en ellos. Lo único que piden es que los defiendan y los representen.\n-Cristina Fernandez"
+    "Presidente quiero decirle que ha iniciado su gobierno con muy buenos augurios después del mensaje que le dio a su pueblo en la Asamblea Legislativa. Confié en ellos. Lo único que piden es que los defiendan y los representen.\n-Cristina Fernandez",
+    "Mi causa es la causa del pueblo. Mi guía es la bandera de la Patria.\n-Juan Domingo Perón",
+    "Nosotros llamamos a todos los argentinos a construir un modelo de igualdad, de justicia y de dignidad.\n-Nestor Kirchner",
   ];
   fs.readFile(__dirname + "/last_index.txt", "utf8", function(err, lastIndex) {
     console.log("last_index:", lastIndex);
