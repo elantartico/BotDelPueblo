@@ -39,3 +39,9 @@ w-100{
 .centered{
   text-align: center;
 }
+
+#wrap {
+	max-width: 768px;
+	margin: 0 auto;
+	text-align: center;
+}
