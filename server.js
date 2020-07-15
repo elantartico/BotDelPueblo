@@ -126,7 +126,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
     "Mi causa es la causa del pueblo. Mi guía es la bandera de la Patria.\n-Juan Domingo Perón",
     "Nosotros llamamos a todos los argentinos a construir un modelo de igualdad, de justicia y de dignidad.\n-Nestor Kirchner",
   ];
-  fs.readFile(__dirname + "/last_index.txt", "utf8", function(err, lastIndex) {
+  /*fs.readFile(__dirname + "/last_index.txt", "utf8", function(err, lastIndex) {
     console.log("last_index:", lastIndex);
 
     if (lastIndex == null || lastIndex == "") {
@@ -153,11 +153,25 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
             ? parseInt(lastIndex) + 1
             : 0;
         fs.writeFile(__dirname + "/last_index.txt", nextIndex, function(err) {
-          /* TODO: Error handling? */
+          /* TODO: Error handling? *-aca va una barra
         });
       }
     });
-  });
+  });*/
+  
+	var random_index = Math.floor(Math.random() * message_options.length)
+	var chosen_message = message_options[random_index]
+	var resp = response;
+	T.post('statuses/update', { status: chosen_message }, function(err, data, response) {
+	if (err){
+	  resp.sendStatus(500);
+	  console.log('Error!');
+	  console.log(err);
+	}
+	else{
+	  resp.sendStatus(200);
+	}
+	});
 });
 
 var listener = app.listen(process.env.PORT, function() {
