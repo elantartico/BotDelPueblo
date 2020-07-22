@@ -3,6 +3,7 @@ var fs = require("fs"),
   util = require("util"),
   path = require("path"),
   express = require("express"),
+  pg = require("pg"),
   app = express(),
   Twit = require("twit"),
   config = {
@@ -16,6 +17,17 @@ var fs = require("fs"),
     }
   },
   T = new Twit(config.twitter);
+  
+  /* PostgreSQL*/
+  const client = new Client({
+	  connectionString: process.env.DATABASE_URL,
+	  ssl: {
+		rejectUnauthorized: false
+	  }
+	});
+
+	client.connect();
+  /**/
 
 app.use(express.static("public"));
 
@@ -126,7 +138,16 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
     "Mi causa es la causa del pueblo. Mi guía es la bandera de la Patria.\n-Juan Domingo Perón",
     "Nosotros llamamos a todos los argentinos a construir un modelo de igualdad, de justicia y de dignidad.\n-Nestor Kirchner",
   ];
-  fs.readFile(__dirname + "/last_index.txt", "utf8", function(err, lastIndex) {
+  
+	client.query('SELECT id,value FROM botdelpueblo.data;', (err, res) => {
+		if (err) throw err;
+		for (let row of res.rows) {
+			console.log(JSON.stringify(row));
+		}
+		client.end();
+	});
+
+  /*fs.readFile(__dirname + "/last_index.txt", "utf8", function(err, lastIndex) {
     console.log("last_index:", lastIndex);
 
     if (lastIndex == null || lastIndex == "") {
@@ -157,7 +178,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
         });
       }
     });
-  });
+  });*/
   
 	/*var random_index = Math.floor(Math.random() * message_options.length)
 	var chosen_message = message_options[random_index]
