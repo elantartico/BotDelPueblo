@@ -27,6 +27,7 @@ var fs = require("fs"),
 	});
 
 	client.connect();
+	console.log('conecto?');
   /**/
 
 app.use(express.static("public"));
@@ -145,6 +146,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 			console.log(JSON.stringify(row));
 		}
 		client.end();
+		console.log('consulta');
 	});
 
   /*fs.readFile(__dirname + "/last_index.txt", "utf8", function(err, lastIndex) {
