@@ -19,7 +19,7 @@ var fs = require("fs"),
   T = new Twit(config.twitter);
   
   /* PostgreSQL*/
-  const client = new Client({
+  const client = new pg({
 	  connectionString: process.env.DATABASE_URL,
 	  ssl: {
 		rejectUnauthorized: false
@@ -139,7 +139,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
     "Nosotros llamamos a todos los argentinos a construir un modelo de igualdad, de justicia y de dignidad.\n-Nestor Kirchner",
   ];
   
-	client.query('SELECT id,value FROM botdelpueblo.data;', (err, res) => {
+	client.query('SELECT id,value FROM botdelpueblo.data WHERE id = 1;', (err, res) => {
 		if (err) throw err;
 		for (let row of res.rows) {
 			console.log(JSON.stringify(row));
