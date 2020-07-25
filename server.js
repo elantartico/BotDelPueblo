@@ -144,22 +144,50 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 	client.query('SELECT id,value FROM botdelpueblo.data WHERE id = 1;', (err, res) => {
 		//if (err) throw err;
 		if (err) {
-			response.sendStatus(500);
+			//response.sendStatus(500);
 			console.log('Error');
 		}
 		else {
-			response.sendStatus(200);
+			//response.sendStatus(200);
 		/*for (let row of res.rows) {
 		if (err) response.sendStatus(500);
 		for (let row of res.rows) {
 			console.log(JSON.stringify(row));
 		}*/
 			console.log(res.rows[0]['value']);
+
+			var lastIndex = res.rows[0]['value'];
+
 			client.end();
 		/*client.query("SELECT NOW()", (err, res) => {
 			console.log(err, res);
 			client.end();
 		});*/
+		}
+	});
+
+	if (lastIndex == null || lastIndex == "") {
+      lastIndex = 0;
+    }
+
+	var totalLines = message_options.length - 1;
+
+    var chosen_message = message_options[lastIndex];
+
+	var nextIndex =
+          parseInt(lastIndex) != parseInt(totalLines)
+            ? parseInt(lastIndex) + 1
+            : 0;
+
+	client.query('UPDATE botdelpueblo.data SET value = ' + nextIndex + ' WHERE id = 1;', (err, res) => {
+		//if (err) throw err;
+		if (err) {
+			console.log('Error');
+		}
+		else {
+			console.log(res);
+
+			client.end();
 		}
 	});
 
