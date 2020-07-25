@@ -3,7 +3,6 @@ var fs = require("fs"),
   util = require("util"),
   path = require("path"),
   express = require("express"),
-  Client = require("pg"),
   app = express(),
   Twit = require("twit"),
   config = {
@@ -19,7 +18,9 @@ var fs = require("fs"),
   T = new Twit(config.twitter);
 
   /* PostgreSQL*/
-  const client = new pg.Client({
+  const Client = require("pg").Client;
+
+  const client = new Client({
 	  connectionString: process.env.DATABASE_URL,
 	  ssl: {
 		rejectUnauthorized: false
