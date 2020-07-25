@@ -16,7 +16,7 @@ var fs = require("fs"),
       access_token_secret: process.env.ACCESS_TOKEN_SECRET
     }
   },
-  T = new Twit(config.twitter),
+  T = new Twit(config.twitter);
 
   /* PostgreSQL*/
   const client = new pg.Client({
