@@ -168,7 +168,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 			client.query('UPDATE botdelpueblo.data SET value = ' + nextIndex + ' WHERE id = 1;', (err, res) => {
 				//if (err) throw err;
 				if (err) {
-					console.log('Error');
+					console.log(err);
 				}
 				else {
 					console.log(res);
