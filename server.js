@@ -18,6 +18,18 @@ var fs = require("fs"),
   },
   T = new Twit(config.twitter);
 
+  /* PostgreSQL*/
+  const client = new pg({
+	  connectionString: process.env.DATABASE_URL,
+	  ssl: {
+		rejectUnauthorized: false
+	  }
+	});
+
+	client.connect();
+	console.log('conecto?');
+  /**/
+
 app.use(express.static("public"));
 
 /* You can use uptimerobot.com or a similar site to hit your /BOT_ENDPOINT to wake up your app and make your Twitter bot tweet. */
@@ -127,18 +139,6 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
     "Mi causa es la causa del pueblo. Mi guía es la bandera de la Patria.\n-Juan Domingo Perón",
     "Nosotros llamamos a todos los argentinos a construir un modelo de igualdad, de justicia y de dignidad.\n-Nestor Kirchner",
   ];
-  
-	  /* PostgreSQL*/
-	  const client = new pg({
-		  connectionString: process.env.DATABASE_URL,
-		  ssl: {
-			rejectUnauthorized: false
-		  }
-		});
-
-		client.connect();
-		console.log('conecto?');
-	  /**/
   
 	client.query('SELECT id,value FROM botdelpueblo.data WHERE id = 1;', (err, res) => {
 		//if (err) throw err;
