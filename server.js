@@ -156,7 +156,8 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 			  lastIndex = 0;
 			}
 
-			var totalLines = message_options.length - 1;
+			//var totalLines = message_options.length - 1;
+			var totalLines = message_options.length;
 
 			var chosen_message = message_options[lastIndex];
 
@@ -172,7 +173,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 					response.sendStatus(500);
 				}
 				else {
-					console.log(totalLines);
+					console.log(res);
 
 					//client.end();
 
