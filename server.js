@@ -180,7 +180,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 				}
 			});
 
-			client.end();
+			//client.end();
 		}
 	});
 
