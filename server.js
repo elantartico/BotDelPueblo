@@ -174,7 +174,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 				else {
 					console.log(res);
 
-					client.end();
+					//client.end();
 
 					response.sendStatus(200);
 				}
