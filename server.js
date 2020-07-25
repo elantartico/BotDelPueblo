@@ -156,8 +156,6 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 		}*/
 			console.log(res.rows[0]['value']);
 
-			const lastIndex = res.rows[0]['value'];
-
 			client.end();
 		/*client.query("SELECT NOW()", (err, res) => {
 			console.log(err, res);
@@ -165,6 +163,8 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 		});*/
 		}
 	});
+
+	const lastIndex = res.rows[0]['value'];
 
 	if (lastIndex == null || lastIndex == "") {
       lastIndex = 0;
