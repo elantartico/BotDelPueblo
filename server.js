@@ -147,7 +147,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 		/*for (let row of res.rows) {
 			console.log(JSON.stringify(row));
 		}*/
-		console.log(res.rows);
+		console.log(res.rows[0]['value']);
 		client.end();
 		/*client.query("SELECT NOW()", (err, res) => {
 			console.log(err, res);
