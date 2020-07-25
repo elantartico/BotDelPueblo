@@ -172,7 +172,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 					response.sendStatus(500);
 				}
 				else {
-					console.log(res);
+					console.log(totalLines);
 
 					//client.end();
 
