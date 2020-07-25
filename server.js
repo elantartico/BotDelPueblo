@@ -17,18 +17,6 @@ var fs = require("fs"),
     }
   },
   T = new Twit(config.twitter);
-  
-  /* PostgreSQL*/
-  const client = new pg({
-	  connectionString: process.env.DATABASE_URL,
-	  ssl: {
-		rejectUnauthorized: false
-	  }
-	});
-
-	client.connect();
-	console.log('conecto?');
-  /**/
 
 app.use(express.static("public"));
 
@@ -140,6 +128,18 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
     "Nosotros llamamos a todos los argentinos a construir un modelo de igualdad, de justicia y de dignidad.\n-Nestor Kirchner",
   ];
   
+	  /* PostgreSQL*/
+	  const client = new pg({
+		  connectionString: process.env.DATABASE_URL,
+		  ssl: {
+			rejectUnauthorized: false
+		  }
+		});
+
+		client.connect();
+		console.log('conecto?');
+	  /**/
+  
 	client.query('SELECT id,value FROM botdelpueblo.data WHERE id = 1;', (err, res) => {
 		//if (err) throw err;
 		if (err) response.sendStatus(500);
@@ -187,14 +187,14 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 	var chosen_message = message_options[random_index]
 	var resp = response;
 	T.post('statuses/update', { status: chosen_message }, function(err, data, response) {
-	if (err){
-	  resp.sendStatus(500);
-	  console.log('Error!');
-	  console.log(err);
-	}
-	else{
-	  resp.sendStatus(200);
-	}
+		if (err){
+		  resp.sendStatus(500);
+		  console.log('Error!');
+		  console.log(err);
+		}
+		else{
+		  resp.sendStatus(200);
+		}
 	});*/
 });
 
