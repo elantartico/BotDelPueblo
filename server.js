@@ -169,11 +169,14 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 				//if (err) throw err;
 				if (err) {
 					console.log(err);
+					response.sendStatus(500);
 				}
 				else {
 					console.log(res);
 
 					client.end();
+
+					response.sendStatus(200);
 				}
 			});
 
