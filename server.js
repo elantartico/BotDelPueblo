@@ -156,7 +156,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 		}*/
 			console.log(res.rows[0]['value']);
 
-			var lastIndex = res.rows[0]['value'];
+			const lastIndex = res.rows[0]['value'];
 
 			client.end();
 		/*client.query("SELECT NOW()", (err, res) => {
