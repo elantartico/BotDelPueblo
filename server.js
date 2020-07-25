@@ -144,8 +144,8 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 	client.query('SELECT id,value FROM botdelpueblo.data WHERE id = 1;', (err, res) => {
 		//if (err) throw err;
 		if (err) {
-			//response.sendStatus(500);
-			console.log('Error');
+			response.sendStatus(500);
+			console.log(err);
 		}
 		else {
 			//response.sendStatus(200);
