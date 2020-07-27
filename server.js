@@ -114,7 +114,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 		"Era el subsuelo de la patria sublevado. Era el cimiento básico de la Nación que asomaba por primera vez en su tosca desnudez original, como asoman las épocas pretéritas de la tierra en la conmoción de terremoto\n-Scalabrini Ortiz",
 		"Es hora de que la dirigencia política deje de lado los fueros y rinda cuentas permanentemente cada vez que es citada ante una intervención de la Justicia\n-Nestor Kirchner",
 		"Había que condenar a un gobierno, el de Néstor Kirchner, que desendeudó el país. Había que traer de vuelta al FMI y para traer el Fondo había que convencer que el que los desendeudó era un chorro y vino a saquear el país\n-Cristina Fernandez",
-		"Estamos en el salón Borges… son incorregibles, ya lo digo Borges son incorregibles (a la multitud que cantó Vamos a volver)\n-Cristina Fernandez",
+		"Estamos en el salón Borges… son incorregibles, ya lo dijo Borges son incorregibles (a la multitud que cantó Vamos a volver)\n-Cristina Fernandez",
 		"Las masas latinoamericanas no pueden hacer causa común con los verdugos, porque ellas también están en la lista de las víctimas.\n-John William Cooke",
 		"Los pactos políticos entre fracciones adversas son siempre de mala fe, aunque sean convenientes.\n-John William Cooke",
 		"No se enojen si hay chicos jóvenes argentinos que protestan, los que sufrimos, los que vimos lo que pasó en esta Patria, abrazamos fuertemente la democracia, a los chicos no los maneja nadie, ese es el cuento de siempre…\n-Nestor Kirchner",
