@@ -123,7 +123,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 		"No pasarán a la historia aquellos que especulen, sino los que más se la jueguen.\n-Nestor Kirchner",
 		"No nos vamos a tirar la suerte entre gitanos... Sabemos que se juegan otros intereses... Muy bien señores, el que esté con esos intereses, se saca la camiseta peronista y se va, nosotros por perder un voto no vamos a ponernos tristes.\n-Juan Domingo Perón",
 		"A esto lo arreglamos entre todos los argentinos o no lo arregla nadie.\n-Juan Domingo Perón",
-		"Si ellos colonizar de nuevo el país, nosotros lo independizaremos otra vez.\n-Juan Domingo Perón",
+		"Si ellos colonizan de nuevo el país, nosotros lo independizaremos otra vez.\n-Juan Domingo Perón",
 		"Para dominar un país ya no hace falta someterlo militarmente, bastan oportunos empréstitos y concesiones\n-Scalabrini Ortiz",
 		"La clase media tiene que darse cuenta que nunca va a encontrar la solidaridad de la oligarquía argentina\n-Nestor Kirchner",
 		"El peronismo es más que un partido. No lo disuelven por decreto ni lo amansan por intimidación. No llamamos a ninguna aventura desesperada. Llamamos a la lucha, que comienza por esclarecer las conciencias, proclama las verdades y hablar por los que callan\n-John William Cooke",
