@@ -45,6 +45,8 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 		"La verdadera democracia es aquella donde el gobierno hace lo que el pueblo quiere y defiende un solo interés: el del pueblo\n-Juan Domingo Perón",
 		"Recuerdo aquél 25 de mayo de 2003 cuando nos dejaron la Argentina prendida fuego y tuvimos que sacar el pecho para reconstruir la patria.\n-Nestor Kirchner",
 		"No existe la libertad de prensa, tan solo es una máscara de la libertad de empresa\n-Arturo Jauretche",
+		"No estoy en guerra con nadie. Hay algunos que no se enteraron de que la guerra terminó y siguen disparando solos. Algún día recibirán un diario que informe bien y se enterarán que la guerra está terminada.\n-Alberto Fernandez",
+		"Sepan que la unica diferencia entre Larreta y Macri es que Larreta se levanta más temprano.\n-Leopoldo Moreau",
 		"Sabemos que faltan asignaturas pendientes, estamos conduciendo, pero tenemos que mejorar las neuronas del estado, que sea eficiente y transparente, tenemos en claro cuales son las asignaturas pendientes, lo importante es tener los ojos y los oídos bien abiertos.\n-Nestor Kirchner",
 		"Todos los argentinos tienen que cumplir la ley, menos Magnetto y Clarín, los demás tenemos que cumplir la ley como corresponde\n-Nestor Kirchner",
 		"Nuestra patria dejará de ser colonia, o la bandera flameará sobre sus ruinas\n-Eva Perón",
