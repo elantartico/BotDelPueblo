@@ -59,6 +59,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 		"Yo llevo en mis oídos la más maravillosa música que, para mí, es la palabra del pueblo argentino.\n-Juan Domingo Perón",
 		"El gobierno justicialista es aquel que sirve al pueblo, que no sirve otro interés que el del pueblo.\n-Juan Domingo Perón",
 		"Sin esperanza de ser escuchado, con la certeza de ser perseguido, pero fiel al compromiso que asumí hace mucho tiempo de dar testimonio en momentos difíciles\n-Rodolfo Walsh",
+		"Lo que sí se terminó es el país de los CEOs y los gerentes que permitían que los empresarios hicieran lo que quisieran, ese país se terminó.\n-Alberto Fernandez",
 		"Quiero que quede claro, como presidente de la Nación, no tengo miedo ni les tengo miedo, que queremos el Ejército de San Martín, Belgrano, Mosconi y Savio, y no de aquellos que asesinaron a sus propios hermanos, que fue el de Videla, Galtieri, Viola y Bignone\n-Nestor Kirchner",
 		"Lo que hace falta es una definición donde Ud. Le diga a todo el movimiento, sintéticamente, que somos revolucionarios en el exacto significado: liberación nacional y revolución social.\n-John William Cooke",
 		"El pensamiento latinoamericano no puede sino ser revolucionario. En cuanto deja de serlo se niega a sí mismo, porque admite como inmutable la situación que nos oprime\n-John William Cooke",
