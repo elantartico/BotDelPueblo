@@ -50,7 +50,7 @@ app.all("/" + process.env.BOT_ENDPOINT, function(request, response) {
 		"Sabemos que faltan asignaturas pendientes, estamos conduciendo, pero tenemos que mejorar las neuronas del estado, que sea eficiente y transparente, tenemos en claro cuales son las asignaturas pendientes, lo importante es tener los ojos y los oídos bien abiertos.\n-Nestor Kirchner",
 		"Todos los argentinos tienen que cumplir la ley, menos Magnetto y Clarín, los demás tenemos que cumplir la ley como corresponde\n-Nestor Kirchner",
 		"Nuestra patria dejará de ser colonia, o la bandera flameará sobre sus ruinas\n-Eva Perón",
-		"Que un domador de reposeras me diga remolón llama la atención.\n-Javier Noguera, intendente de Tafí Viejo, sobre Macri"
+		"Que un domador de reposeras me diga remolón llama la atención.\n-Javier Noguera, intendente de Tafí Viejo, sobre Macri",
 		"Siempre pasan estas cosas en la Argentina contra los peronistas. En el pasado y en estos cuatro años. Ahora, si no sos peronista pero sos multimillonario se presume honesto\n-Cristina Fernandez",
 		"No puede haber argentinos de primera y argentinos de segunda. El país es uno solo y debe propender al desarrollo de todas sus regiones\n-Alberto Fernandez",
 		"Sabemos el genocidio que pasó nuestra industria petrolera, la increíble privatización (...) Si YPF hubiera quedado en manos nuestras estaríamos recaudando (...) entre 20 y 25 y hasta 30.000 millones de dólares por año\n-Nestor Kirchner",
